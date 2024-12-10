@@ -1,0 +1,1 @@
+INSERT INTO Cargo(nome) VALUES("Administrador(a)"),("Supervisor(a)"),("Comum");

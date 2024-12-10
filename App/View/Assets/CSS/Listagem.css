@@ -1,0 +1,56 @@
+@import url("./Global.css");
+
+body {
+
+    gap: 25px;
+
+}
+
+div {
+
+    height: auto;
+    width: auto;
+    max-height: 400px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+div table {
+
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-spacing: 10px;
+
+}
+
+div table thead th, div table tbody td {
+
+    border: 1px solid #000000;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+
+}
+
+div table thead th {
+
+    background-color: #000000;
+    color: #FFFFFF;
+
+}
+
+div table tbody td {
+
+    background-color: transparent;
+    color: #000000;
+
+}
+
+div table tbody td a {
+
+    font-size: 20px;
+    padding: 5px;
+
+}

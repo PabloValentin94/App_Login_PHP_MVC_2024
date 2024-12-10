@@ -1,0 +1,48 @@
+@import url("./Global.css");
+
+form {
+
+    flex-direction: column;
+
+}
+
+form div {
+
+    flex-direction: row;
+
+}
+
+form, form div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+form label {
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+form input, form select {
+
+    border: 1px solid #000000;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+form input:focus, form select:focus {
+
+    border-width: 2px;
+    cursor: initial;
+
+}
