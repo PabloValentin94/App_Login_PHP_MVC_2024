@@ -10,11 +10,15 @@
 
         <link rel="stylesheet" type="text/css" href="<?= ROOT ?>/View/Assets/CSS/Global.css">
 
+        <script defer type="text/javascript" src="<?= ROOT ?>/View/Assets/JS/Global.js">  </script>
+
         <title> Tela Inicial </title>
 
     </head>
 
     <body>
+
+        <button id="theme-button"> Alterar Tema </button>
 
         <a href="<?= ROOT ?>/cadastro"> Cadastro </a>
 

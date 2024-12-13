@@ -69,6 +69,21 @@
             return $stmt->fetchObject("App\Model\CargoModel");
 
         }
+
+        public function FindRepetition(string $nome) : object | false
+        {
+
+            $sql = "SELECT * FROM Cargo WHERE nome = ? ORDER BY id ASC";
+
+            $stmt = $this->connection->prepare($sql);
+
+            $stmt->bindValue(1, $nome);
+
+            $stmt->execute();
+
+            return $stmt->fetchObject("App\Model\CargoModel");
+
+        }
         
     }
 

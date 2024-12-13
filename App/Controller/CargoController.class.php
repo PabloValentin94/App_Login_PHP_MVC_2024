@@ -33,9 +33,19 @@
                 $_POST["nome"]
             );
 
-            $model->Save();
+            if($model->Save())
+            {
 
-            parent::Redirect("/cargo/listagem");
+                parent::Redirect("/cargo/listagem");
+
+            }
+
+            else
+            {
+
+                parent::Alert("O nome informado já existe!", "/cargo");
+
+            }
 
         }
 

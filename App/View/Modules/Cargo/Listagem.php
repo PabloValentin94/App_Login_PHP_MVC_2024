@@ -10,11 +10,15 @@
 
         <link rel="stylesheet" type="text/css" href="<?= ROOT ?>/View/Assets/CSS/Listagem.css">
 
+        <script defer type="text/javascript" src="<?= ROOT ?>/View/Assets/JS/Global.js">  </script>
+
         <title> Listagem de Cargos de Usuário </title>
 
     </head>
 
     <body>
+
+        <button id="theme-button"> Alterar Tema </button>
 
         <h1> Listagem de Cargos de Usuário </h1>
 

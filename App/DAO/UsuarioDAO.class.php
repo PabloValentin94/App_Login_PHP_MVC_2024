@@ -82,6 +82,21 @@
 
         }
 
+        public function FindRepetition(string $email) : object | false
+        {
+
+            $sql = "SELECT * FROM Usuario WHERE email = ? ORDER BY id ASC";
+
+            $stmt = $this->connection->prepare($sql);
+
+            $stmt->bindValue(1, $email);
+
+            $stmt->execute();
+
+            return $stmt->fetchObject("App\Model\UsuarioModel");
+
+        }
+
         public function Login(string $email) : object | false
         {
 

@@ -12,6 +12,8 @@
 
     $routes_manager = new RoutesManager();
 
+    $routes_manager->Define("GET", "", [(count($_SESSION) > 0) ? "../Dashboard.php" : "../Inicio.php"]);
+
     $routes_manager->Define("GET", "/", [(count($_SESSION) > 0) ? "../Dashboard.php" : "../Inicio.php"]);
 
     if(count($_SESSION) > 0)

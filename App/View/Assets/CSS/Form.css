@@ -26,12 +26,13 @@ form label {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    color: var(--contrast-color);
 
 }
 
 form input, form select {
 
-    border: 1px solid #000000;
+    border: 1px solid var(--contrast-color);
     outline: none;
     font-size: 20px;
     text-align: center;

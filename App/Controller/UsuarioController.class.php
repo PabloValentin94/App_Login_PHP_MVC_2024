@@ -50,9 +50,19 @@
                     (int) $_POST["fk_cargo"]
                 );
     
-                $model->Save();
+                if($model->Save())
+                {
+
+                    parent::Redirect("/");
+
+                }
     
-                parent::Redirect("/");
+                else
+                {
+
+                    parent::Alert("O e-mail informado já está em uso!", "/cadastro");
+
+                }
 
             }
 

@@ -10,11 +10,15 @@
 
         <link rel="stylesheet" type="text/css" href="<?= ROOT ?>/View/Assets/CSS/Form.css">
 
+        <script defer type="text/javascript" src="<?= ROOT ?>/View/Assets/JS/Global.js">  </script>
+
         <title> Login de Usuário </title>
 
     </head>
 
     <body>
+
+        <button id="theme-button"> Alterar Tema </button>
 
         <h1> Login de Usuário </h1>
 
@@ -24,7 +28,7 @@
             <input type="email" name="email" id="email" maxlength="100" autocomplete="off" required>
 
             <label for="senha"> Senha: </label>
-            <input type="password" name="senha" id="senha" maxlength="255" autocomplete="off" required>
+            <input type="password" name="senha" id="senha" minlength="4" maxlength="255" autocomplete="off" required>
 
             <div>
 

@@ -20,14 +20,14 @@ div {
 div table {
 
     background-color: transparent;
-    border: 1px solid #000000;
+    border: 1px solid var(--contrast-color);
     border-spacing: 10px;
 
 }
 
 div table thead th, div table tbody td {
 
-    border: 1px solid #000000;
+    border: 1px solid var(--contrast-color);
     font-size: 20px;
     text-align: center;
     padding: 15px;
@@ -36,15 +36,15 @@ div table thead th, div table tbody td {
 
 div table thead th {
 
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--contrast-color);
+    color: var(--page-color);
 
 }
 
 div table tbody td {
 
     background-color: transparent;
-    color: #000000;
+    color: var(--contrast-color);
 
 }
 

@@ -44,12 +44,26 @@
             
         }
 
-        public function Save() : void
+        public function Save() : bool
         {
 
             $dao = new UsuarioDAO();
 
-            ($this->id === 0) ? $dao->Insert($this) : $dao->Update($this);
+            if($dao->FindRepetition($this->email) === false)
+            {
+
+                ($this->id === 0) ? $dao->Insert($this) : $dao->Update($this);
+
+                return true;
+                
+            }
+
+            else
+            {
+
+                return false;
+
+            }
 
         }
 

@@ -10,11 +10,15 @@
 
         <link rel="stylesheet" type="text/css" href="<?= ROOT ?>/View/Assets/CSS/Form.css">
 
+        <script defer type="text/javascript" src="<?= ROOT ?>/View/Assets/JS/Global.js">  </script>
+
         <title> Cadastro de Cargos de Usuário </title>
 
     </head>
 
     <body>
+
+        <button id="theme-button"> Alterar Tema </button>
 
         <h1> Cadastro de Cargos de Usuário </h1>
 

@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" type="text/css" href="<?= ROOT ?>/View/Assets/CSS/Global.css">
 
+        <script defer type="text/javascript" src="<?= ROOT ?>/View/Assets/JS/Global.js">  </script>
+
         <title> Página Inexistente </title>
 
         <style>
@@ -34,6 +36,8 @@
     </head>
 
     <body>
+        
+        <button id="theme-button"> Alterar Tema </button>
 
         <figure> <img src="<?= ROOT ?>/View/Assets/Images/Favicon.png" alt="Icon"> </figure>
 

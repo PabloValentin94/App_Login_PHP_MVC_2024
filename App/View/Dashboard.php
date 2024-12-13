@@ -10,13 +10,17 @@
 
         <link rel="stylesheet" type="text/css" href="<?= ROOT ?>/View/Assets/CSS/Global.css">
 
+        <script defer type="text/javascript" src="<?= ROOT ?>/View/Assets/JS/Global.js">  </script>
+
         <title> Dashboard </title>
 
     </head>
 
     <body>
 
-        <h1> O usuário <?= $_SESSION["usuario"]["nome"] ?> está logado. </h1>
+        <button id="theme-button"> Alterar Tema </button>
+
+        <h1> O usuário <span id="user-color"> <?= $_SESSION["usuario"]["nome"] ?> </span> está logado. </h1>
 
         <a href="<?= ROOT ?>/logout"> Sair </a>
 
@@ -27,5 +31,15 @@
         <?php endif ?>
         
     </body>
+
+    <script type="text/javascript">
+
+        const user_color = document.getElementById("user-color");
+
+        const colors = ["#FF0000", "#008000", "#0000FF"];
+
+        user_color.style.color = colors[<?= $_SESSION["usuario"]["fk_cargo"] - 1 ?>]
+
+    </script>
 
 </html>
